@@ -1,0 +1,57 @@
+@import './src/styles/main';
+
+.mng__landing-page {
+  &__container{
+    margin-top: 2rem;
+    border:2px solid red;
+  }
+
+  &__header {
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-text-wrapper {
+      @include device-xs {
+        border: 2px solid red;
+      }
+    }
+
+    &-title {
+      font-weight: 600;
+      font-size: 2.8rem;
+    }
+
+    &-description {
+      font-weight: 400;
+      font-size: 2rem;
+    }
+
+    &__image {
+      &-container {
+        max-width: 30rem;
+        max-height: 30rem;
+      }
+
+      &-tag {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &__action-view {
+    &-container {
+      display: flex;
+      justify-content: flex-start;
+      column-gap: 2rem;
+    }
+
+    &-button {
+      font-weight: 200;
+      font-size: 1.4rem;
+    }
+  }
+}

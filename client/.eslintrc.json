@@ -1,0 +1,97 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "react-hooks",
+        "import"
+    ],
+    "settings": {
+        "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "import/parsers": {
+            "@typescript-eslint/parser": [".ts", ".tsx"]
+        },
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
+    },
+    "rules": {
+        "no-use-before-define": "off",
+        "@typescript-eslint/ban-ts-comment": "off",
+        "@typescript-eslint/no-use-before-define": ["error"],
+        "react/jsx-filename-extension": [1,
+            {
+                "extensions": [
+                    ".tsx",
+                    ".ts"
+                ]
+            }
+        ],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": ["error"],
+        "max-len": ["warn", { "code": 200 }],
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "import/prefer-default-export": "off",
+        "react/prop-types": "off",
+        "object-curly-newline": ["error", {
+            "ObjectExpression": { "multiline": true, "minProperties": 1 },
+            "ObjectPattern": { "multiline": true, "minProperties": 3 },
+            "ImportDeclaration": { "multiline": true, "minProperties": 3 },
+            "ExportDeclaration": { "multiline": true, "minProperties": 3 }
+        }],
+        //        "implicit-arrow-linebreak": ["error", "below"],
+        "brace-style": [2],
+        "no-template-curly-in-string": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/function-component-definition": [
+            2,
+            {
+                "namedComponents": "arrow-function",
+                "unnamedComponents": "arrow-function"
+            }
+        ],
+        "@typescript-eslint/naming-convention": [
+            "error",
+            { "selector": "enum", "format": ["UPPER_CASE"] }
+        ],
+        "react/jsx-max-props-per-line": [1, { "maximum": { "single": 1, "multi": 1 } }],
+        "function-paren-newline": ["error", { "minItems": 2 }],
+        "react/button-has-type": "off",
+        "quotes": [
+            "error",
+            "single",
+            {
+                "allowTemplateLiterals": true
+            }
+        ]
+    }
+}

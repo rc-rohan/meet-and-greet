@@ -1,0 +1,29 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  background-color: #E8EAF3;
+}
+
+html {
+  font-size: 10px;
+}
+
+* {
+  font-family: 'Oxygen', sans-serif;
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.meet-and-greet__app {
+  &__container {
+
+  }
+}

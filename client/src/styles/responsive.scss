@@ -1,0 +1,24 @@
+// Mobile 0-599
+@mixin device-xs {
+  @media (max-width: 599px) { @content; }
+}
+
+// Tablet Vertical 600-904
+@mixin device-s {
+  @media (max-width: 904px) { @content; }
+}
+
+// Tablet Landscape 905-1239
+@mixin device-m {
+  @media (max-width: 1239px) { @content; }
+}
+
+// Laptop 1240-1439
+@mixin device-l {
+  @media (max-width: 1439px) { @content; }
+}
+
+// Desktop 1440 +
+@mixin device-xl {
+  @media (min-width: 1440px) { @content; }
+}

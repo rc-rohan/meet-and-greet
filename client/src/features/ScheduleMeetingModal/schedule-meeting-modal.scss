@@ -1,0 +1,99 @@
+.mng__schedule-meeting-modal {
+  &__container {
+
+  }
+
+  &__wrapper {
+
+  }
+
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+  }
+
+  &__header {
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 2rem;
+      align-items: flex-start;
+    }
+    &-text-content-wrapper {
+      flex: 1;
+    }
+
+    &-title {
+
+    }
+
+    &-description {
+     margin: 1rem 0;
+    }
+
+    &-close-icon {
+
+    }
+  }
+
+  &__form {
+    &-container {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.2rem;
+    }
+
+    &-text-field {
+      font-size: 2rem;
+    }
+
+    &-date-time-picker {
+      &-container {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        column-gap: 1.2rem;
+        row-gap: 1.2rem;
+        margin-top: .5rem;
+      }
+
+      &-date {
+        flex: 1;
+      }
+
+      &-time {
+        flex: 1;
+      }
+    }
+
+    &-dropdown {
+
+    }
+  }
+
+  &__suggestion-note {
+
+  }
+
+  &__action {
+    &-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      column-gap: 1.2rem;
+      margin-top: 1.2rem;
+      font-size: 1.4rem;
+      font-weight: 400;
+
+    }
+    &-cancel-cta {
+      flex: 1;
+    }
+    &-send-cta {
+      flex: 1;
+    }
+  }
+}

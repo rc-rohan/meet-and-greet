@@ -1,0 +1,17 @@
+.mng__root-navigator {
+  &__container {
+
+  }
+
+  &__loader {
+    &-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-icon {
+      //flex: 1;
+    }
+  }
+}
